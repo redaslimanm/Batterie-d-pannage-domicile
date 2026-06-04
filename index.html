@@ -29,14 +29,22 @@
     </div>
     <div class="container header__inner">
       <a href="#" class="logo">
-        <img src="images/logo.png" alt="Batterie dépannage à domicile — Dépannage batterie à Fès" class="logo__img" width="240" height="76">
+        <img src="images/mahal.jpeg" alt="Façade du magasin Fès Auto Pièces" class="logo__mahal" width="110" height="80" loading="lazy">
+        <img src="images/logo.png" alt="Batterie dépannage à domicile — Dépannage batterie à Fès" class="logo__img" width="270" height="88">
         <span class="logo__text">Dépannage batterie à domicile</span>
       </a>
       <nav class="nav" id="nav">
         <a href="#avantages">Pourquoi nous</a>
         <a href="#marques">Marques</a>
         <a href="#fonctionnement">Comment ça marche</a>
-        <a href="#contact" class="nav__cta">Contact</a>
+        <div class="nav__actions">
+          <a href="#localisation" class="nav__location" aria-label="Voir notre localisation sur la carte">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+            </svg>
+          </a>
+          <a href="#contact" class="nav__cta">Contact</a>
+        </div>
       </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <span></span>
@@ -125,8 +133,8 @@
 
           <div class="hero__stats">
             <a href="#horaires" class="hero__stat hero__stat--link" aria-label="Voir nos horaires de travail">
-              <strong>8h–21h</strong>
-              <span>Horaires · Lun–Dim</span>
+              <strong>9h–20h</strong>
+              <span>Horaires · Lun–Sam</span>
             </a>
             <div class="hero__stat">
               <strong>100%</strong>
@@ -511,16 +519,16 @@
               <div class="horaires-card__main">
                 <span class="horaires-card__icon" aria-hidden="true">🕐</span>
                 <div>
-                  <p class="horaires-card__days">Lundi – Dimanche</p>
-                  <p class="horaires-card__time">8h00 – 21h00</p>
+                  <p class="horaires-card__days">Lundi – Samedi</p>
+                  <p class="horaires-card__time">9h00 – 20h00</p>
                 </div>
               </div>
               <p class="horaires-card__note">
-                <strong>Dimanche :</strong> majoration de <strong>+10&nbsp;%</strong> sur le tarif d'intervention.
+                <strong>Dimanche :</strong> fermé.
               </p>
             </aside>
 
-            <div class="contact-map">
+            <div class="contact-map" id="localisation">
               <div class="contact-map__head">
                 <h3>Nous trouver</h3>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=2+Rue+Angola+Mont+Fleuri+F%C3%A8s+Maroc" target="_blank" rel="noopener" class="contact-map__link">Ouvrir dans Google Maps</a>

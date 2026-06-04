@@ -28,7 +28,7 @@
   --radius: 12px;
   --radius-lg: 20px;
   --header-bar-h: 42px;
-  --header-inner-h: 88px;
+  --header-inner-h: 98px;
   --header-total-h: calc(var(--header-bar-h) + var(--header-inner-h));
 
 html {
@@ -169,6 +169,17 @@ body {
   font-size: 1.1rem;
 }
 
+.logo__mahal {
+  display: block;
+  flex-shrink: 0;
+  height: 80px;
+  width: 110px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
 .logo__text {
   font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   font-size: 0.95rem;
@@ -180,17 +191,23 @@ body {
 
 .logo__img {
   display: block;
-  height: 76px;
+  height: 88px;
   width: auto;
-  max-width: 280px;
+  max-width: 320px;
   object-fit: contain;
   object-position: left center;
 }
 
 @media (max-width: 480px) {
+  .logo__mahal {
+    height: 56px;
+    width: 78px;
+    border-radius: 4px;
+  }
+
   .logo__img {
-    height: 58px;
-    max-width: 220px;
+    height: 66px;
+    max-width: 250px;
   }
 
   .logo__text {
@@ -215,6 +232,32 @@ body {
 
 .nav a:hover {
   color: var(--color-primary);
+}
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #e63946 !important;
+  background: rgba(230, 57, 70, 0.1);
+  border: 1px solid rgba(230, 57, 70, 0.35);
+  border-radius: 8px;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition) !important;
+}
+
+.nav__location:hover {
+  color: #fff !important;
+  background: #e63946;
+  border-color: #e63946;
+  transform: scale(1.05);
 }
 
 .nav__cta {
@@ -2110,6 +2153,7 @@ body {
 }
 
 .contact-map {
+  scroll-margin-top: calc(var(--header-total-h) + 1rem);
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -2373,7 +2417,14 @@ body {
     pointer-events: all;
   }
 
+  .nav__actions {
+    width: 100%;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
   .nav__cta {
+    flex: 1;
     text-align: center;
   }
 
