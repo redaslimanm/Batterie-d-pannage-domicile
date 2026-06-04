@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=68">
+  <link rel="stylesheet" href="css/style.css?v=72">
 </head>
 <body>
   <header class="header" id="header">
@@ -21,7 +21,7 @@
             <span class="ticker-banner__icon" aria-hidden="true">
               <img src="images/logogg.png" alt="" width="36" height="36">
             </span>
-            نحن دائماً معك، نأتي حتى لعندك ونبدّل لك بطارية السيارة في عين المكان
+            نحن دائماً معك، نجيو حتى لعندك ونبدّل لك بطارية السيارة في عين المكان
             <span class="ticker-banner__dot" aria-hidden="true">✦</span>
           </span>
         </div>
@@ -30,9 +30,9 @@
     <div class="container header__inner">
       <a href="#" class="logo">
         <img src="images/logo.png" alt="Batterie dépannage à domicile — Dépannage batterie à Fès" class="logo__img" width="240" height="76">
+        <span class="logo__text">Dépannage batterie à domicile</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="#services">Services</a>
         <a href="#avantages">Pourquoi nous</a>
         <a href="#marques">Marques</a>
         <a href="#fonctionnement">Comment ça marche</a>
@@ -76,12 +76,19 @@
         <div class="hero__content">
           <p class="hero__eyebrow">Service professionnel · Fès</p>
           <h1>Votre batterie changée <span class="hero__title-accent">chez vous</span></h1>
-          <p class="hero__subtitle">Intervention rapide à domicile — Fès et environs</p>
-
-          <div class="hero__brands" aria-label="Marques disponibles">
-            <span class="hero__brand">VARTA</span>
-            <span class="hero__brand">Exide</span>
-            <span class="hero__brand">Bosch</span>
+          <div class="hero__subtitle-row">
+            <p class="hero__subtitle">Intervention rapide à domicile — Fès et environs</p>
+            <div class="hero__brands" aria-label="Marques disponibles">
+              <span class="hero__brand">VARTA</span>
+              <span class="hero__brand">Exide</span>
+              <span class="hero__brand">Bosch</span>
+              <span class="hero__brand">Banner</span>
+              <span class="hero__brand">Tudor</span>
+              <span class="hero__brand">Autoplus</span>
+              <span class="hero__brand">Rouch</span>
+              <span class="hero__brand">Yaysa</span>
+              <span class="hero__brand">Fulmin</span>
+            </div>
           </div>
 
           <p class="hero__desc">
@@ -117,10 +124,10 @@
           </div>
 
           <div class="hero__stats">
-            <div class="hero__stat">
-              <strong>24/7</strong>
-              <span>Disponibilité</span>
-            </div>
+            <a href="#horaires" class="hero__stat hero__stat--link" aria-label="Voir nos horaires de travail">
+              <strong>8h–21h</strong>
+              <span>Horaires · Lun–Dim</span>
+            </a>
             <div class="hero__stat">
               <strong>100%</strong>
               <span>À domicile</span>
@@ -134,42 +141,6 @@
 
         <div class="hero__featured">
           <img src="images/imagesrr.png" alt="Technicien remplaçant une batterie de voiture à domicile à Fès" class="hero__featured-img">
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--services" id="services">
-      <div class="container">
-        <div class="section__header">
-          <h2>Nos Services</h2>
-          <p>Vente et import de pièces automobiles pour particuliers et professionnels.</p>
-        </div>
-        <div class="cards">
-          <article class="card card--highlight">
-            <div class="card__icon">🔋</div>
-            <h3>Batteries VARTA</h3>
-            <p>Batteries automobiles de la marque VARTA, reconnue pour sa fiabilité et sa longévité.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon">⚡</div>
-            <h3>Bougies NGK</h3>
-            <p>Bougies d'allumage NGK pour un démarrage optimal et de meilleures performances moteur.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon">🛢️</div>
-            <h3>Filtres & huiles</h3>
-            <p>Filtres à huile, huiles moteur et consommables pour l'entretien de votre véhicule.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon">⚙️</div>
-            <h3>Pièces automobiles</h3>
-            <p>Large choix de pièces détachées pour l'entretien et la réparation automobile.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon">🌍</div>
-            <h3>Import de pièces</h3>
-            <p>Service d'import de pièces automobiles sur commande pour vos besoins spécifiques.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -192,6 +163,81 @@
       </div>
     </section>
 
+    <section class="section section--method" id="methode">
+      <div class="container">
+        <div class="section__header section__header--method">
+          <span class="method-badge">Notre méthode</span>
+          <h2>Comment nous travaillons</h2>
+          <p>Un processus clair en 9 étapes — de votre demande jusqu'à la remise de la facture et de la garantie.</p>
+        </div>
+        <ol class="method-steps">
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">01</span>
+            <div class="method-step__body">
+              <h3>Réception de la demande client</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">استقبال طلب الزبون</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">02</span>
+            <div class="method-step__body">
+              <h3>Diagnostic du problème</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">تشخيص المشكلة</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">03</span>
+            <div class="method-step__body">
+              <h3>Détermination de la batterie adaptée</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">تحديد البطارية المناسبة</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">04</span>
+            <div class="method-step__body">
+              <h3>Déplacement vers le client</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">التوجه إلى موقع الزبون</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">05</span>
+            <div class="method-step__body">
+              <h3>Contrôle batterie &amp; système électrique</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">فحص البطارية والنظام الكهربائي</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">06</span>
+            <div class="method-step__body">
+              <h3>Retrait de l'ancienne batterie</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">إزالة البطارية القديمة</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">07</span>
+            <div class="method-step__body">
+              <h3>Installation de la nouvelle batterie</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">تركيب البطارية الجديدة</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">08</span>
+            <div class="method-step__body">
+              <h3>Test de démarrage du véhicule</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">اختبار تشغيل السيارة</p>
+            </div>
+          </li>
+          <li class="method-step">
+            <span class="method-step__num" aria-hidden="true">09</span>
+            <div class="method-step__body">
+              <h3>Remise de la facture &amp; garantie</h3>
+              <p class="method-step__ar" dir="rtl" lang="ar">تسليم الفاتورة والضمان</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
     <section class="section" id="marques">
       <div class="container">
         <div class="section__header">
@@ -207,11 +253,13 @@
             <li class="brand"><img src="images/brands/exide.png" alt="Exide" width="160" height="48" loading="lazy"></li>
             <li class="brand"><img src="images/brands/banner.png" alt="Banner" width="160" height="48" loading="lazy"></li>
             <li class="brand"><img src="images/brands/tudor.png" alt="Tudor" width="160" height="48" loading="lazy"></li>
+            <li class="brand"><img src="images/brands/autoplus.png" alt="Autoplus" width="160" height="48" loading="lazy"></li>
             <li class="brand" aria-hidden="true"><img src="images/brands/varta.png" alt="" width="160" height="48" loading="lazy"></li>
             <li class="brand" aria-hidden="true"><img src="images/brands/bosch.png" alt="" width="160" height="48" loading="lazy"></li>
             <li class="brand" aria-hidden="true"><img src="images/brands/exide.png" alt="" width="160" height="48" loading="lazy"></li>
             <li class="brand" aria-hidden="true"><img src="images/brands/banner.png" alt="" width="160" height="48" loading="lazy"></li>
             <li class="brand" aria-hidden="true"><img src="images/brands/tudor.png" alt="" width="160" height="48" loading="lazy"></li>
+            <li class="brand" aria-hidden="true"><img src="images/brands/autoplus.png" alt="" width="160" height="48" loading="lazy"></li>
           </ul>
         </div>
       </div>
@@ -458,6 +506,20 @@
               </article>
             </div>
 
+            <aside class="horaires-card" id="horaires">
+              <h3 class="horaires-card__title">Horaires de travail</h3>
+              <div class="horaires-card__main">
+                <span class="horaires-card__icon" aria-hidden="true">🕐</span>
+                <div>
+                  <p class="horaires-card__days">Lundi – Dimanche</p>
+                  <p class="horaires-card__time">8h00 – 21h00</p>
+                </div>
+              </div>
+              <p class="horaires-card__note">
+                <strong>Dimanche :</strong> majoration de <strong>+10&nbsp;%</strong> sur le tarif d'intervention.
+              </p>
+            </aside>
+
             <div class="contact-map">
               <div class="contact-map__head">
                 <h3>Nous trouver</h3>
@@ -525,12 +587,12 @@
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/" class="footer__social-link footer__social-link--facebook" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/1B11PrpyGY/?mibextid=wwXIfr" class="footer__social-link footer__social-link--facebook" target="_blank" rel="noopener" aria-label="Facebook">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/" class="footer__social-link footer__social-link--instagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <a href="https://www.instagram.com/fespiecesauto?igsh=cDF5Yzc2eW90NTVm&utm_source=qr" class="footer__social-link footer__social-link--instagram" target="_blank" rel="noopener" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
           </li>
